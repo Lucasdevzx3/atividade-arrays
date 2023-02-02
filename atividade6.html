@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        Escreva um algoritmo que solicite ao usuário a entrada de 5 nomes,
+        e que exiba a lista desses nomes na tela. Após exibir essa lista, o
+        programa deve mostrar também os nomes na ordem inversa em
+        que o usuário os digitou.
+
+        Ex:
+        Entrada: Édson, Marcelo, Letícia, Ju, Thobias
+        Saída: Thobias, Ju, Letícia, Marcelo, Édson
+
+        for let i = o < 5 i ++
+        let nome []
+        .push adiciona um ou mais elementos
+         ao final de um array e retorna o novo comprimento 
+    -->
+    <script>
+      let nomes = [];
+      for (let i = 0; i < 5; i++) {
+        nomes.push(prompt("Digite um nome:"));
+      }
+      console.log("Nomes digitados:", nomes);
+      console.log("Nomes invertidos:", nomes.reverse());
+    </script>
+  </body>
+</html>

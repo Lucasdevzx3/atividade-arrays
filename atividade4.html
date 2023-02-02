@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        Crie uma função que recebe 2 vetores de 10 elementos inteiros e que
+        retorne a união dos dois em um novo vetor.
+        function unirvetores
+        let uniao 
+        return array 'Set não permite valores duplicados.'
+    -->
+    <script>
+      function unirVetores(vetor1, vetor2) {
+        return [...new Set([...vetor1, ...vetor2])];
+      }
+
+      let vetor1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let vetor2 = [11, 12, 13, 14, 15, 1, 2, 3, 4, 5];
+
+      let uniao = unirVetores(vetor1, vetor2);
+
+      console.log(uniao);
+    </script>
+  </body>
+</html>

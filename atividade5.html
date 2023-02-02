@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        Crie uma função que recebe um vetor de inteiros e um número
+        inteiro e retorne verdadeiro se o número faz parte do vetor ou falso
+        se não faz parte.
+
+        function vetor num
+        return vetor 
+        let vetor
+        let num
+        let resultado (vetor num)
+        *importante*
+        vetor.includes retorna true se o elemento estiver
+         presente e false caso contrário. ex:
+         vetor = [1, 2, 3, 4, 5];
+         console.log(vetor.includes(3)); // retorna true
+        console.log(vetor.includes(6)); // retorna false
+    -->
+    <script>
+      function verificaPresenca(vetor, num) {
+        return vetor.includes(num);
+      }
+
+      let vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let num = 5;
+
+      let resultado = verificaPresenca(vetor, num);
+
+      if (resultado) {
+        console.log(`O número ${num} faz parte do vetor.`);
+      } else {
+        console.log(`O número ${num} não faz parte do vetor.`);
+      }
+    </script>
+  </body>
+</html>
